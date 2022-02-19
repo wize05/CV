@@ -292,23 +292,44 @@ section.about .content .right p span:nth-child(1):after {
   top: 0;
 }
 
-section.hard .content {
-  display: grid;
+section.hard .content .left {
+  /*display: grid;0*/
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
-section .content .hard .item {
+section.hard .content .left .timeline__wrapper {
+  border-left: 2px dotted var(--dark-blue);
+}
+
+section.hard .content .item {
   margin-bottom: 2.6rem;
   margin-left: 15px;
   position: relative;
 }
 
+section.hard .content .left p {
+  font-size: 14px;
+  color: var(--ternary);
+  line-height: 1.7;
+}
 
-section.skills .content .left {
+section.hard .content .left .item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--info);
+  border-radius: 50%;
+  margin-left: -21px;
+}
+
+/*section.skills .content .left {
   display: grid;
   grid-template-columns: 1fr, 1fr;
-}
+}*/
 
 section.skills .content .left .heading {
   margin-bottom: 2rem;
@@ -330,6 +351,7 @@ section.skills .content .left p {
   color: var(--ternary);
   line-height: 1.7;
 }
+
 section.skills .content .left p.center {
   color: var(--fade);
 }
