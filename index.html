@@ -25,12 +25,12 @@
           <i class="uil uil-cell"></i>
           VASILIY CV
         </div>
-        <div>
-          <button>
-            <i class="uil uil-print"></i>
-            Print
-          </button>
-        </div>
+          <div class="switch">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+            <label for="language-toggle"></label>
+            <span class="ru">RU</span>
+            <span class="en">EN</span>
+          </div>
       </div>
     </nav>
 
@@ -96,7 +96,7 @@
       </section>
 
       <section class="about">
-        <h1 class="section__heading">About Me !</h1>
+        <h1 class="section__heading lang" key="" >About Me !</h1>
         <div class="content">
           <div class="left">
             <h2>I'm Yurenkov Vasiliy Sergeevich</h2>
@@ -117,7 +117,7 @@
             </p>
             <p>
               <span>Spoken Language</span>
-              <span>English - Hindi</span>
+              <span>English, Russian, Belarusian</span>
             </p>
             <p>
               <span>Nationality</span>
@@ -125,7 +125,7 @@
             </p>
             <p>
               <span>Interest</span>
-              <span>Music, Travel</span>
+              <span>Music, Travel, Swimming, Cycling</span>
             </p>
           </div>
         </div>
@@ -284,6 +284,8 @@
     <script src="./plugins/headline/headline.js"></script>
     <script src="./plugins/ripples.js"></script>
     <script src="./plugins/magnify.js"></script>
+    <script src="./js/language.js"></script>
+    <script src="./js/jquery.min.js"></script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
