@@ -17,6 +17,7 @@
   --dribbble: #ff5da0;
   --telegram: #0083fd;
   --linkedin: #07058b;
+  --skype: #0083fd;
   --success: #1ecab8;
   --danger: #f1646c;
   --dark-blue: #28365f;
@@ -310,6 +311,9 @@ section.profile .right ul.socials li:nth-child(4) a {
 }
 section.profile .right ul.socials li:nth-child(5) a {
   background: var(--linkedin);
+}
+section.profile .right ul.socials li:nth-child(6) a {
+  background: var(--skype);
 }
 
 .section__heading {
